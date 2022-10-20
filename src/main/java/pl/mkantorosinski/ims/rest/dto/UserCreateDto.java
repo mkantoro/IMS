@@ -5,13 +5,13 @@ import lombok.Getter;
 import pl.mkantorosinski.ims.entity.Role;
 
 
+import java.awt.*;
 import java.util.Date;
+
 @Getter
 @Builder
-public class UserDto {
+public class UserCreateDto {
 
-
-    private long id;
 
     private String login;
 
@@ -19,11 +19,7 @@ public class UserDto {
 
     private String full_name;
 
-    private Date created_at;
-
-    private Date deleted_at;
-
-    private int status;
+    private String password;
 
     private Role role;
 }

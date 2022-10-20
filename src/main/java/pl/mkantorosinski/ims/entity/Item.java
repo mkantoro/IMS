@@ -1,8 +1,6 @@
 package pl.mkantorosinski.ims.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,6 +9,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Setter
 @AllArgsConstructor
+@Getter
+@Builder
 public class Item {
 
     public Item(String name, ItemType type, ItemProp property) {
@@ -20,7 +20,7 @@ public class Item {
     }
 
     @Id
-    private long id;
+    private Long id;
     private String name;
 
     @ManyToOne
