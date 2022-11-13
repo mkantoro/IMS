@@ -15,7 +15,7 @@ public class ItemService {
 
     public void create(ItemCreateDto itemCreateDto){
         Item itemToSave;
-        itemToSave = new Item(itemCreateDto.getName(),itemCreateDto.getType(),itemCreateDto.getProperties());
+        itemToSave = new Item(itemCreateDto.getName(), itemCreateDto.getType(),itemCreateDto.getProperties());
         itemRepository.save(itemToSave);
     }
 }
